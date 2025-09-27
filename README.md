@@ -19,3 +19,4 @@ Copilot calculated the output. Count was 1000000, mean was 0.500064557021, and s
 After modifying for the moments: expected values were 1/2, 1/3, 1/4, and 1/5. Computed values were 0.500064557021, 0.333333098254, 0.249939919680, and 0.199893774021.
 
 Example 3
+So, Copilot accidentally gave me two scripts for this. I called the first one scatter.py and the second one scatter2.py.
