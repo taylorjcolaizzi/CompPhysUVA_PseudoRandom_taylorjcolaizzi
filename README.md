@@ -15,4 +15,5 @@ python entropy.py large.txt.gz
 " end quote.
 
 Example 2
-Copilot calculated the output. Count was 1000000, mean was 0.500064557021, and std_dev (sample) was 0.288563026623.
+Copilot calculated the output. Count was 1000000, mean was 0.500064557021, and std_dev (sample) was 0.288563026623. This is close to the theoretical mean and population standard deviation.
+After modifying for the moments: expected values were 1/2, 1/3, 1/4, and 1/5. Computed values were 0.500064557021, 0.333333098254, 0.249939919680, and 0.199893774021.
