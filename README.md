@@ -9,9 +9,11 @@ The compressed file (large.txt.gz) was 1,463 bytes and its entropy was 4.838450 
 "# 1) Use a large text file you have (e.g., logs, an eBook, or a source tree):
 python entropy.py large.txt
 
-# 2) Compress it (keep original):
+'# 2) Compress it (keep original):
 gzip -k large.txt    # produces large.txt.gz
 
-# 3) Entropy on the compressed file:
+'# 3) Entropy on the compressed file:
 python entropy.py large.txt.gz
 " end quote.
+
+Example 2
