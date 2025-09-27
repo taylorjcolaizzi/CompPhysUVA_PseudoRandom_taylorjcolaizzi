@@ -25,3 +25,4 @@ Example 4
 It made the program.
 
 Example 5
+Prompting this: "Modify the script so that the first number has a mean of 0 and standard deviation of 1, and the second has a mean of 0 and standard deviation of 2." had no effect.
