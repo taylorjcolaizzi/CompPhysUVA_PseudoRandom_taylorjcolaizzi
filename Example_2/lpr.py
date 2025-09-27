@@ -1,3 +1,4 @@
+
 """lpr.py — Linear Congruential Pseudo-Random Number Generator (LCG)
 
 Formula: X_{n+1} = (a * X_n + c) mod m
@@ -14,7 +15,7 @@ Example:
     print(lcg.generate_sequence(5))
 """
 from __future__ import annotations
-from typing import List
+from typing import List, Optional
 
 class LinearCongruentialGenerator:
     def __init__(self, seed: int, a: int = 1103515245, c: int = 12345, m: int = 2**31):
