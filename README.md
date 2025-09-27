@@ -20,3 +20,5 @@ After modifying for the moments: expected values were 1/2, 1/3, 1/4, and 1/5. Co
 
 Example 3
 So, Copilot accidentally gave me two scripts for this. I called the first one scatter.py and the second one scatter2.py.
+
+Example 4
