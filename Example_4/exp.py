@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 exp.py — Generate 1000 pseudo-random numbers from an exponential distribution
-with lambda = 10, print them, and display a histogram with the theoretical PDF.
+with lambda = 10, print summary statistics, and display a histogram with the
+theoretical PDF for comparison.
 """
 
 import numpy as np
@@ -15,8 +16,23 @@ def main():
     # Generate samples: NumPy uses 'scale' = 1/lambda for exponential
     samples = np.random.exponential(scale=1.0 / lambda_param, size=1000)
 
-    # Print the samples (optional: comment this out if too verbose)
-    print(samples)
+    # --- Summary statistics ---
+    mean = np.mean(samples)
+    std_pop = np.std(samples, ddof=0)      # population std (NumPy default)
+    std_sample = np.std(samples, ddof=1)   # sample std (unbiased)
+
+    print("Summary statistics for 1000 Exponential(λ=10) samples:")
+    print(f"  Mean: {mean:.6f}")
+    print(f"  Std dev (sample, ddof=1): {std_sample:.6f}")
+    print(f"  Std dev (population, ddof=0): {std_pop:.6f}")
+
+    # (Optional) Theoretical values for reference
+    theo_mean = 1.0 / lambda_param
+    theo_std = 1.0 / lambda_param
+    print(f"  Theoretical mean/std: {theo_mean:.6f} / {theo_std:.6f}\n")
+
+    # (Optional) Print all samples — comment out if too verbose
+    # print(samples)
 
     # Plot histogram (density=True to show probability density)
     plt.figure(figsize=(8, 5))
