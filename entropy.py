@@ -5,6 +5,7 @@ from collections import Counter
 
 def compute_entropy(file_path):
     try:
+        # Open in binary mode to handle any file type
         with open(file_path, "rb") as f:
             data = f.read()
     except Exception as e:
